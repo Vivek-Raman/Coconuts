@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Projects\Unity\Inspire-Me" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Bomb" t="Include">
+            <e p="Bomb.cs" t="Include" />
+            <e p="Explodable.cs" t="Include" />
+          </e>
+          <e p="Extras" t="Include">
+            <e p="Extensions.cs" t="Include" />
+            <e p="Unused" t="Include">
+              <e p="FrameAllPlayers.cs" t="Include" />
+              <e p="Midpoint.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Grid System" t="Include">
+            <e p="DrawGrid.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="DrawGridEditor.cs" t="Include" />
+            </e>
+            <e p="GridSystem.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Health.cs" t="Include" />
+            <e p="PlaceBomb.cs" t="Include" />
+            <e p="PlayerInputHandler.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayersManager.cs" t="Include" />
+            <e p="Spawnpoints.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Inspire-Me.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Vivek Raman\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vivek Raman\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Inspire-Me.309013452.00" t="ExcludeRecursive" />
+  </component>
+</project>

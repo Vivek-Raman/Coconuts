@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Explodable : MonoBehaviour
+public class SolidWallExplosionHandler : MonoBehaviour, IExplosionHandler
 {
     public void OnExplode()
     {

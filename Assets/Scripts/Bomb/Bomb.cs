@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    public LayerMask mask;
+    //public LayerMask mask;
     private List<Vector3> directions;
     private float timeToExplode = 3f;
     private Transform player = null;
-    private Collider bombCollider = null;
-    
-    public void SetPlayer(Transform owner)
+    private float distance = 10f;
+
+    // TODO: Refactor
+    public void SetPlayer(Transform owner, float bombRange = 10f)
     {
         this.player = owner;
+        distance = bombRange;
     }
     
     private void Awake()
@@ -22,7 +24,7 @@ public class Bomb : MonoBehaviour
         {
             Vector3.forward, Vector3.left, Vector3.back, Vector3.right
         };
-        bombCollider = this.GetComponent<Collider>();
+        
     }
     
     private void Start()
@@ -36,41 +38,20 @@ public class Bomb : MonoBehaviour
         foreach (Vector3 direction in directions)
         {
             Ray ray = new Ray(this.transform.position, direction);
-            
-            if (bombCollider.Raycast(ray, out RaycastHit hit, 10f))
+
+            if (Physics.Raycast(ray, out RaycastHit hit, distance))
             {
-                RaycastHitHandler(hit);
+                if (hit.transform.TryGetComponent(out IExplosionHandler explodedObject))
+                {
+                    explodedObject.OnExplode();
+                }
+                //RaycastHitHandler(hit);
             }
         }
         
         Destroy(this.gameObject);
     }
-
-    // TODO: SiNgLe rEsPoNsIBiLItY pRiNcIpLe
-    private void RaycastHitHandler(RaycastHit hit)
-    {
-        Transform other = hit.transform;
-        if (other.CompareTag("Player"))
-        {
-            Health health = other.GetComponent<Health>();
-            health.Modify(-1);
-        }
-        else if (other.CompareTag("Explodable"))
-        {
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("Wall"))
-        {
-        }
-        else if (other.CompareTag("Bomb"))
-        {
-        }
-        else
-        {
-            Debug.LogError("Unhandled collision case");
-        }
-    }
-
+    
     private void OnDestroy()
     {
         // spawn explosion FX

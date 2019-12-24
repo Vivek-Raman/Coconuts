@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 7916475983792249993}
   - component: {fileID: 198041017937951288}
   - component: {fileID: 3296768973610867515}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bomb
   m_TagString: Bomb
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 1792
+    m_Bits: 1793
 --- !u!135 &198041017937951288
 SphereCollider:
   m_ObjectHideFlags: 0

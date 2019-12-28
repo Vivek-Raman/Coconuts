@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NotificationBehavior: 2
-  m_MaxPlayerCount: 4
+  m_MaxPlayerCount: 2
   m_AllowJoining: 1
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
@@ -1055,17 +1055,17 @@ PrefabInstance:
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.5
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
@@ -1264,7 +1264,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1187116067}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1216866605
+--- !u!1001 &1231488137
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1274,17 +1274,17 @@ PrefabInstance:
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3114010694033810328, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}
@@ -1325,11 +1325,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3930019162861272111, guid: d6903faff0f8e62488aefebb06493495,
-        type: 3}
-      propertyPath: m_DefaultControlScheme
-      value: Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 4700118939772658768, guid: d6903faff0f8e62488aefebb06493495,
         type: 3}

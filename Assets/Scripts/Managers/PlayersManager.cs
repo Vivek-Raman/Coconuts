@@ -19,7 +19,7 @@ public class PlayersManager : MonoBehaviour
     {
         players.Add(input.transform);
         players[playerIndex].position = spawns.playerSpawnpoints[playerIndex];
-        input.SwitchCurrentControlScheme(controlSchemes[playerIndex], Keyboard.current);
+        input.SwitchCurrentControlScheme(controlSchemes[playerIndex % controlSchemes.Length], Keyboard.current);
 
         if (grid == null)
         {

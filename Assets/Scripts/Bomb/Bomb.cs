@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; 
 
 public class Bomb : MonoBehaviour
 {
-    //public LayerMask mask;
+    [HideInInspector] public int layerMask = 7681;
+
     private List<Vector3> directions;
     private float timeToExplode = 3f;
     private Transform player = null;
@@ -19,7 +20,7 @@ public class Bomb : MonoBehaviour
     
     private void Awake()
     {
-        // Populate directions
+        // defaultLayerMask = LayerMask.GetMask("Default", "Wall", "Explodable", "Bomb", "Player");
         directions = new List<Vector3>
         {
             Vector3.forward, Vector3.left, Vector3.back, Vector3.right
@@ -33,13 +34,13 @@ public class Bomb : MonoBehaviour
         Invoke(nameof(Explode), timeToExplode);
     }
 
-    private void Explode()
+    public void Explode()
     {
         foreach (Vector3 direction in directions)
         {
             Ray ray = new Ray(this.transform.position, direction);
 
-            if (Physics.Raycast(ray, out RaycastHit hit, distance))
+            if (Physics.Raycast(ray, out RaycastHit hit, distance, layerMask))
             {
                 if (hit.transform.TryGetComponent(out IExplosionHandler explodedObject))
                 {

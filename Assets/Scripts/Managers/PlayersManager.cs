@@ -8,7 +8,8 @@ public class PlayersManager : MonoBehaviour
     public Spawnpoints spawns = null;
     [SerializeField] private GridSystem grid = null;
     private int playerIndex = 0;
-
+    private readonly string[] controlSchemes = {"Player 1", "Player 2"};
+    
     private void Awake()
     {
         playerIndex = 0;
@@ -18,7 +19,8 @@ public class PlayersManager : MonoBehaviour
     {
         players.Add(input.transform);
         players[playerIndex].position = spawns.playerSpawnpoints[playerIndex];
-        
+        input.SwitchCurrentControlScheme(controlSchemes[playerIndex], Keyboard.current);
+
         if (grid == null)
         {
             Debug.LogError("Grid not assigned.");

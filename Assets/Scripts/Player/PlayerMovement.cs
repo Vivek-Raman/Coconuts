@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     
     public Vector2 MoveInput { get; set; } = Vector2.zero;
 
-    private void Update()
+    private void FixedUpdate()
     {
         this.transform.Translate(Time.deltaTime * movementSpeed * MoveInput.ToVector3(), Space.World);
     }

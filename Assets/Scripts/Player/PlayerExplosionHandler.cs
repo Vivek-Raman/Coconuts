@@ -12,6 +12,6 @@ public class PlayerExplosionHandler : MonoBehaviour, IExplosionHandler
 
     public void OnExplode()
     {
-        health.Modify(-1);
+        health.CurrentHealth--;
     }
 }

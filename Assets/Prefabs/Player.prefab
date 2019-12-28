@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7077429292254691156}
   - component: {fileID: 2667112415610681646}
   - component: {fileID: 7762111145551701890}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 1355118145531752940}
   - component: {fileID: 4742714478842924849}
   - component: {fileID: 7300978475957716184}
-  - component: {fileID: 6535564927894180081}
-  m_Layer: 0
+  - component: {fileID: 8380874026895995222}
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -274,6 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumHealth: 5
   initialHealth: 3
+  currentHealth: 0
 --- !u!114 &4742714478842924849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,8 +303,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!136 &6535564927894180081
-CapsuleCollider:
+--- !u!65 &8380874026895995222
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -312,7 +313,6 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 2
-  m_Height: 8
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 8, z: 4}
   m_Center: {x: 0, y: 4, z: 0}

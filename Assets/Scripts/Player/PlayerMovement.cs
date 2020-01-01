@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed = 10f;
+    
+    [HideInInspector] public float movementSpeed = 15f;
     
     public Vector2 MoveInput { get; set; } = Vector2.zero;
 

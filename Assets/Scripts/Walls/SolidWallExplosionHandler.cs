@@ -2,7 +2,7 @@
 
 public class SolidWallExplosionHandler : MonoBehaviour, IExplosionHandler
 {
-    public void OnExplode()
+    public void OnExplode(Transform bombOwner)
     {
         
     }

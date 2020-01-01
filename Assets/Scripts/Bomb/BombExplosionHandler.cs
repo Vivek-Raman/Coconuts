@@ -10,7 +10,7 @@ public class BombExplosionHandler : MonoBehaviour, IExplosionHandler
         bomb = this.GetComponent<Bomb>();
     }
 
-    public void OnExplode()
+    public void OnExplode(Transform bombOwner)
     {
         bomb.layerMask = LayerMask.GetMask("Default", "Wall", "Explodable", "Player");
         bomb.Explode();

@@ -91,9 +91,10 @@ GameObject:
   - component: {fileID: 3930019162861272111}
   - component: {fileID: 3851095951332509149}
   - component: {fileID: 7398769334849393135}
-  - component: {fileID: 454579941917431542}
-  - component: {fileID: 1355118145531752940}
   - component: {fileID: 4742714478842924849}
+  - component: {fileID: 1355118145531752940}
+  - component: {fileID: 454579941917431542}
+  - component: {fileID: 1554636597593548629}
   - component: {fileID: 7300978475957716184}
   - component: {fileID: 8380874026895995222}
   m_Layer: 12
@@ -245,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 15
---- !u!114 &454579941917431542
+--- !u!114 &4742714478842924849
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,12 +255,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4700118939772658768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d6d5e21e34844769c5998e55c2a2de1, type: 3}
+  m_Script: {fileID: 11500000, guid: 519cbecf6bce4afa9e5c5d75a5f81656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombPrefab: {fileID: 3296768973610867514, guid: 163f749c05471e44a86377583605dfb3,
-    type: 3}
-  cooldown: 3
 --- !u!114 &1355118145531752940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +273,7 @@ MonoBehaviour:
   maximumHealth: 5
   initialHealth: 3
   currentHealth: 0
---- !u!114 &4742714478842924849
+--- !u!114 &454579941917431542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,9 +282,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 4700118939772658768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 519cbecf6bce4afa9e5c5d75a5f81656, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d6d5e21e34844769c5998e55c2a2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 3296768973610867514, guid: 163f749c05471e44a86377583605dfb3,
+    type: 3}
+--- !u!114 &1554636597593548629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700118939772658768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850511cc095ecc842b081b3c621ab7c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombCooldown: 3
+  bombExplosionRange: 3
 --- !u!54 &7300978475957716184
 Rigidbody:
   m_ObjectHideFlags: 0

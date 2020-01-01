@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine; 
 
 public class Bomb : MonoBehaviour
@@ -11,10 +10,9 @@ public class Bomb : MonoBehaviour
     private Transform player = null;
     private float distance = 10f;
 
-    // TODO: Refactor
-    public void SetPlayer(Transform owner, float bombRange = 10f)
+    public void SetPlayerAndAttributes(Transform bombOwner, float bombRange = 10f)
     {
-        this.player = owner;
+        this.player = bombOwner;
         distance = bombRange;
     }
     
@@ -44,7 +42,7 @@ public class Bomb : MonoBehaviour
             {
                 if (hit.transform.TryGetComponent(out IExplosionHandler explodedObject))
                 {
-                    explodedObject.OnExplode();
+                    explodedObject.OnExplode(player);
                 }
                 //RaycastHitHandler(hit);
             }

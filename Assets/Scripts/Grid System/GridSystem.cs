@@ -29,9 +29,7 @@ public class GridSystem : ScriptableObject
 
         return positionInGrid;
     }
-    
-    
-    
+
     private float GetCentralOrdinateFromPositionOrdinate(float ordinate)
     {
         int cellCount = (int) (Mathf.Abs(ordinate) * cellSizeReciprocal);

@@ -10,7 +10,7 @@ public class PlayerExplosionHandler : MonoBehaviour, IExplosionHandler
         health = this.GetComponent<Health>();
     }
 
-    public void OnExplode()
+    public void OnExplode(Transform bombOwner)
     {
         health.CurrentHealth--;
     }

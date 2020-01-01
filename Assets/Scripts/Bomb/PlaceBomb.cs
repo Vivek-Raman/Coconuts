@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 public class PlaceBomb : MonoBehaviour
 {
     [SerializeField] private GameObject bombPrefab = null;
-    [SerializeField] private float cooldown = 3f;
+
+    private Attributes playerAttributes = null;
     private Transform bombParentTransform = null;
     private bool canPlaceBomb = true;
 
@@ -18,6 +19,7 @@ public class PlaceBomb : MonoBehaviour
             temp.transform.position = Vector3.zero;
         }
         bombParentTransform = temp.transform;
+        playerAttributes = this.GetComponent<Attributes>();
     }
 
     public void PlaceBombAtPosition(Vector3 position)
@@ -26,10 +28,11 @@ public class PlaceBomb : MonoBehaviour
         {
             return;
         }
+        
         Instantiate(bombPrefab, position, Quaternion.identity, bombParentTransform).TryGetComponent(out Bomb bomb);
-        bomb.SetPlayer(this.transform);
+        bomb.SetPlayerAndAttributes(this.transform, playerAttributes.BombExplosionRange);
         canPlaceBomb = false;
-        Invoke(nameof(Cooldown), cooldown);
+        Invoke(nameof(Cooldown), playerAttributes.BombCooldown);
     }
 
     private void Cooldown()

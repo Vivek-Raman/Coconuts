@@ -1,4 +1,6 @@
-﻿public interface IExplosionHandler
+﻿using UnityEngine;
+
+public interface IExplosionHandler
 {
-    void OnExplode();
+    void OnExplode(Transform bombOwner);
 }

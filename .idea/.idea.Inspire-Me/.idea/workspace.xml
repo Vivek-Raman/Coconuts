@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a60d793-adc8-4024-b188-6283a4efdc8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 0/Level 0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 0/Level 0.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid System/GridSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid System/GridSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlaceBomb.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlaceBomb.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Walls/SolidWallExplosionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Walls/SolidWallExplosionHandler.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,26 +45,27 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Walls/SolidWallExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bomb.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@7.1.5/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0-preview.3/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extras/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7559BF97-67E7-4FF5-906F-18401F66CD57/d2/4a099cea/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid System/Editor/DrawGridEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/PlaceBomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7559BF97-67E7-4FF5-906F-18401F66CD57/5d/8fb0f34f/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@7.1.5/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid System/GridSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid System/DrawGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18B38ADE-9B85-49A5-AFF4-B379F33ECCEC/6a/30b1f564/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlaceBomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0-preview.3/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@7.1.5/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0-preview.3/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extras/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@7.1.5/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Spawnpoints.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -66,29 +76,38 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FrameAllPlayers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GridSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrawGrid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grid System/DrawGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid System/Editor/DrawGridEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayersManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grid System/Grid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grid System/GridSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Spawnpoints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayersManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlaceBomb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/Explodable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/WallExplosionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/ExplodableWallExplosionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extras/Extensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Powerups/Powerup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Powerups/Modifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/IModifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid System/DrawGrid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/Modifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlaceBomb.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid System/GridSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/Attributes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Walls/SolidWallExplosionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/PlaceBomb.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +181,9 @@
       <workItem from="1577184365207" duration="995000" />
       <workItem from="1577204913921" duration="5727000" />
       <workItem from="1577451028887" duration="7405000" />
-      <workItem from="1577521520813" duration="5107000" />
+      <workItem from="1577521520813" duration="7763000" />
+      <workItem from="1577803869823" duration="510000" />
+      <workItem from="1577891949082" duration="4866000" />
     </task>
     <servers />
   </component>

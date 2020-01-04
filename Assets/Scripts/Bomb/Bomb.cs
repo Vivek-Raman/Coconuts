@@ -8,12 +8,12 @@ public class Bomb : MonoBehaviour
     private List<Vector3> directions;
     private float timeToExplode = 3f;
     private Transform player = null;
-    private float distance = 10f;
+    private float range = 10f;
 
     public void SetPlayerAndAttributes(Transform bombOwner, float bombRange = 10f)
     {
         this.player = bombOwner;
-        distance = bombRange;
+        range = bombRange;
     }
     
     private void Awake()
@@ -38,7 +38,7 @@ public class Bomb : MonoBehaviour
         {
             Ray ray = new Ray(this.transform.position, direction);
 
-            if (Physics.Raycast(ray, out RaycastHit hit, distance, layerMask))
+            if (Physics.Raycast(ray, out RaycastHit hit, range, layerMask))
             {
                 if (hit.transform.TryGetComponent(out IExplosionHandler explodedObject))
                 {

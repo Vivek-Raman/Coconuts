@@ -1,40 +1,45 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Attributes : MonoBehaviour
 {
-    [SerializeField] private float bombCooldown = 3f;
-    [SerializeField] private float bombExplosionRange = 3f;
-
-    // movement speed?
+    private const float MinimumBombExplosionRange = 1f;
+    private const float MaximumBombExplosionRange = 3f;
     
-    private float cellSize = 0.5f;
+    [SerializeField] private float bombCooldown = 3f;
+
+    private float bombExplosionRangeInCells;
+
+    public float CellSize { get; set; } = 5f;
+
     
     private void Awake()
     {
-        // assigns cellSize from GridSystem object
-        if (this.TryGetComponent(out PlayerInputHandler inputHandler))
-        {
-            cellSize = inputHandler.System.cellSize;
-        }
+        BombExplosionRangeInCells = 1f;
     }
-
+    
     public float BombCooldown
     {
         get => bombCooldown;
         set => bombCooldown = (value <= 1f) ? 1f : value;
     }
 
-    public float BombExplosionRange
+    public float BombExplosionRange { get; private set; } = 5f;
+
+    public float BombExplosionRangeInCells
     {
-        get => bombExplosionRange;
-        set => bombExplosionRange = Mathf.Clamp(value, 
-            DistanceFromCellCount(1f), 
-            DistanceFromCellCount(4f));
+        get => bombExplosionRangeInCells;
+        set
+        {
+            bombExplosionRangeInCells = Mathf.Clamp(value, 
+                MinimumBombExplosionRange, 
+                MaximumBombExplosionRange);
+            BombExplosionRange = DistanceFromCellCount(BombExplosionRangeInCells);
+        }
     }
 
     private float DistanceFromCellCount(float cells)
     {
-        return (cells + 0.5f) * cellSize;
+        return cells * CellSize;
     }
-
 }

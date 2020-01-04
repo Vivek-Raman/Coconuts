@@ -27,7 +27,8 @@ public class PlayersManager : MonoBehaviour
             return;
         }
         
-        players[playerIndex].GetComponent<PlayerInputHandler>().System = grid;
+        players[playerIndex].GetComponent<PlayerInputHandler>().Grid = grid;
+        players[playerIndex].GetComponent<Attributes>().CellSize = grid.cellSize;
         playerIndex++;
     }
 

@@ -31,6 +31,10 @@
             <e p="PlayersManager.cs" t="Include" />
             <e p="Spawnpoints.cs" t="Include" />
           </e>
+          <e p="Modifiers" t="Include">
+            <e p="IncreaseBombRange.cs" t="Include" />
+            <e p="Modifier.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="Attributes.cs" t="Include" />
             <e p="PlayerExplosionHandler.cs" t="Include" />
@@ -38,6 +42,7 @@
             <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="Walls" t="Include">
+            <e p="DropModifierOnDestroy.cs" t="Include" />
             <e p="ExplodableWallExplosionHandler.cs" t="Include" />
             <e p="SolidWallExplosionHandler.cs" t="Include" />
           </e>
@@ -48,7 +53,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
-    <e p="C:\Users\Vivek Raman\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Vivek Raman\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Inspire-Me.309013452.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vivek Raman\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vivek Raman\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Inspire-Me.309013452.00" t="ExcludeRecursive" />
   </component>
 </project>

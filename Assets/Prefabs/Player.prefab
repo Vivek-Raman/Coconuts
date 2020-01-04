@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombCooldown: 3
-  bombExplosionRange: 3
+  bombExplosionRange: 1
 --- !u!54 &7300978475957716184
 Rigidbody:
   m_ObjectHideFlags: 0

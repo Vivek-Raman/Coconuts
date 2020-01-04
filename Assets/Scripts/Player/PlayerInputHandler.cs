@@ -4,15 +4,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
-    public Vector3 PositionInGrid => gridSystem.GetPositionInGrid(this.transform.position);
+    public Vector3 PositionInGrid => Grid.GetPositionInGrid(this.transform.position);
 
-    public GridSystem System
-    {
-        get => gridSystem;
-        set => gridSystem = value;
-    }
-    
-    private GridSystem gridSystem = null;
+    public GridSystem Grid { get; set; } = null;
+
     private PlayerMovement movement = null;
     private PlaceBomb bomber = null;
 

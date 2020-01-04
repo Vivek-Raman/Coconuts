@@ -7,6 +7,6 @@ public class IncreaseBombRange : Modifier
     protected override void Modify()
     {
         Debug.Log("picked up");
-        player.BombExplosionRangeInCells += rangeIncrement;
+        playerAttributes.BombExplosionRangeInCells += rangeIncrement;
     }
 }

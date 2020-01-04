@@ -3,11 +3,11 @@
 public abstract class Modifier : MonoBehaviour
 {
     // [SerializeField] private float duration;
-    protected Attributes player;
+    protected Attributes playerAttributes;
     
     protected virtual void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out player))
+        if (other.TryGetComponent(out playerAttributes))
         {
             Modify();
             DestroyOnPickup();

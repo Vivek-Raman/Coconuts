@@ -6,8 +6,8 @@ public class Bomb : MonoBehaviour
     [HideInInspector] public int layerMask = 7681;
 
     private List<Vector3> directions;
-    private float timeToExplode = 3f;
     private Transform player = null;
+    private float timeToExplode = 3f;
     private float range = 10f;
 
     public void SetPlayerAndAttributes(Transform bombOwner, float bombRange = 10f)
@@ -23,12 +23,10 @@ public class Bomb : MonoBehaviour
         {
             Vector3.forward, Vector3.left, Vector3.back, Vector3.right
         };
-        
     }
     
     private void Start()
     {
-        // on init, start Explode() after timeToExplode seconds
         Invoke(nameof(Explode), timeToExplode);
     }
 
@@ -37,7 +35,6 @@ public class Bomb : MonoBehaviour
         foreach (Vector3 direction in directions)
         {
             Ray ray = new Ray(this.transform.position, direction);
-
             if (Physics.Raycast(ray, out RaycastHit hit, range, layerMask))
             {
                 if (hit.transform.TryGetComponent(out IExplosionHandler explodedObject))

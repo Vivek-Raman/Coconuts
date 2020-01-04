@@ -32,7 +32,9 @@
             <e p="Spawnpoints.cs" t="Include" />
           </e>
           <e p="Modifiers" t="Include">
+            <e p="DecreaseBombCooldown.cs" t="Include" />
             <e p="IncreaseBombRange.cs" t="Include" />
+            <e p="IncreasePlayerHealth.cs" t="Include" />
             <e p="Modifier.cs" t="Include" />
           </e>
           <e p="Player" t="Include">

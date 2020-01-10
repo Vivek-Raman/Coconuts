@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Attributes : MonoBehaviour
 {
@@ -9,20 +8,13 @@ public class Attributes : MonoBehaviour
     
     [SerializeField] private float bombCooldown = 3f;
 
-    private float bombExplosionRangeInCells;
+    private float bombExplosionRangeInCells = 1f;
     private Health health;
-
-    public float CellSize { get; set; } = 5f;
     
     private void Awake()
     {
         this.TryGetComponent(out health);
         BombExplosionRangeInCells = 1f;
-    }
-
-    private void OnGUI()
-    {
-        GUILayout.TextField(health.CurrentHealth.ToString());
     }
 
     #region Bomb Cooldown
@@ -32,11 +24,13 @@ public class Attributes : MonoBehaviour
         get => bombCooldown;
         set => bombCooldown = (value <= MinimumBombCooldown) ? MinimumBombCooldown : value;
     }
-    
+
     #endregion
 
     #region Bomb Explosion Range
 
+    public float CellSize { get; set; } = 5f;
+    
     public float BombExplosionRange { get; private set; } = 5f;
 
     public float BombExplosionRangeInCells
@@ -67,4 +61,5 @@ public class Attributes : MonoBehaviour
     }
 
     #endregion
+    
 }

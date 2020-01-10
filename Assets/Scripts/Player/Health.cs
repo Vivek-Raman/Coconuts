@@ -2,14 +2,16 @@
 
 public class Health : MonoBehaviour
 {
-    private const int maximumHealth = 5;
-    private const int initialHealth = 3;
+    private const int MaximumHealth = 5;
+    private const int InitialHealth = 3;
 
     private int currentHealth = 0;
-
+    private Lives lives = null;
+    
     private void Awake()
     {
-        currentHealth = initialHealth;
+        lives = this.GetComponent<Lives>();
+        currentHealth = InitialHealth;
     }
 
     public int CurrentHealth
@@ -19,14 +21,12 @@ public class Health : MonoBehaviour
         {
             if (value <= 0)
             {
-                //dead
-                Debug.Log(this.name + " dead");
-                Destroy(this.gameObject);
+                lives.NumberOfLives--;
             }
         
-            if (value > maximumHealth)
+            if (value > MaximumHealth)
             {
-                value = maximumHealth;
+                value = MaximumHealth;
             }
 
             currentHealth = value;

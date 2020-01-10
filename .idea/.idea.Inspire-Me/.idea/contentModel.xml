@@ -26,10 +26,8 @@
             </e>
             <e p="GridSystem.cs" t="Include" />
           </e>
-          <e p="Health.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="PlayersManager.cs" t="Include" />
-            <e p="Spawnpoints.cs" t="Include" />
           </e>
           <e p="Modifiers" t="Include">
             <e p="DecreaseBombCooldown.cs" t="Include" />
@@ -39,13 +37,17 @@
           </e>
           <e p="Player" t="Include">
             <e p="Attributes.cs" t="Include" />
+            <e p="Health.cs" t="Include" />
+            <e p="Lives.cs" t="Include" />
             <e p="PlayerExplosionHandler.cs" t="Include" />
             <e p="PlayerInputHandler.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="Spawnpoints.cs" t="Include" />
           </e>
           <e p="Walls" t="Include">
             <e p="DropModifierOnDestroy.cs" t="Include" />
             <e p="ExplodableWallExplosionHandler.cs" t="Include" />
+            <e p="ModifierTable.cs" t="Include" />
             <e p="SolidWallExplosionHandler.cs" t="Include" />
           </e>
         </e>

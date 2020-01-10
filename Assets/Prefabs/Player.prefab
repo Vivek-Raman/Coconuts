@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7398769334849393135}
   - component: {fileID: 4742714478842924849}
   - component: {fileID: 1355118145531752940}
+  - component: {fileID: 5719635642892835321}
   - component: {fileID: 454579941917431542}
   - component: {fileID: 1554636597593548629}
   - component: {fileID: 7300978475957716184}
@@ -245,7 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6499be7fd8b94626a80250c8279a2e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 15
 --- !u!114 &4742714478842924849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,9 +270,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f3a0863c4d471aa62b73c9e4860e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumHealth: 5
-  initialHealth: 3
-  currentHealth: 0
+--- !u!114 &5719635642892835321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700118939772658768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41dc80215758475e8b507a0fae7a3f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfLives: 3
 --- !u!114 &454579941917431542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombCooldown: 3
-  bombExplosionRange: 1
 --- !u!54 &7300978475957716184
 Rigidbody:
   m_ObjectHideFlags: 0

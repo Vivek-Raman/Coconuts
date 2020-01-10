@@ -2,26 +2,42 @@
 
 public class DropModifierOnDestroy : MonoBehaviour
 {
+    private const float DropClipThreshold = 0.7f;
+    
+    [SerializeField] private ModifierTable modifiers = null;
+    
+    private Transform modifierParentTransform = null;
+
+    private void Awake()
+    {
+        GameObject temp = GameObject.Find("Bombs");
+        if (temp == null)
+        {
+            temp = new GameObject("Bombs");
+            temp.transform.position = Vector3.zero;
+        }
+        modifierParentTransform = temp.transform;
+    }
+
     private void OnDestroy()
     {
+        if (modifiers == null)
+        {
+            return;
+        }
+        
         if (IsDrop())
         {
-            SelectModifier();
-            DropModifier();
+            DropModifier(modifiers.GetRandomModifier());
         }
     }
 
     private bool IsDrop()
     {
-        return true;
+        return Random.Range(1, 100) < DropClipThreshold * 100;
     }
-
-    private void SelectModifier()
+    private void DropModifier(GameObject modifier)
     {
-        
-    }
-    
-    private void DropModifier()
-    {
+        Instantiate(modifier, this.transform.position, Quaternion.identity, modifierParentTransform);
     }
 }

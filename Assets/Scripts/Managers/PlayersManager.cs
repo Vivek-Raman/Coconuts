@@ -8,7 +8,7 @@ public class PlayersManager : MonoBehaviour
     public Spawnpoints spawns = null;
     [SerializeField] private GridSystem grid = null;
     private int playerIndex = 0;
-    private readonly string[] controlSchemes = {"Player 1", "Player 2"};
+    private readonly string[] controlSchemes = {"Player 1", "Player 2", "Player 3", "Player 4"};
     
     private void Awake()
     {
@@ -17,18 +17,20 @@ public class PlayersManager : MonoBehaviour
 
     public void AddPlayer(PlayerInput input)
     {
+        // add to list
         players.Add(input.transform);
-        players[playerIndex].position = spawns.playerSpawnpoints[playerIndex];
-        input.SwitchCurrentControlScheme(controlSchemes[playerIndex % controlSchemes.Length], Keyboard.current);
-
-        if (grid == null)
-        {
-            Debug.LogError("Grid not assigned.");
-            return;
-        }
         
+        // bring to surface
+        players[playerIndex].position = spawns.playerSpawnpoints[playerIndex];
+        
+        // set input scheme
+        input.SwitchCurrentControlScheme(controlSchemes[playerIndex % controlSchemes.Length], Keyboard.current, Gamepad.current);
+        
+        // misc settings
         players[playerIndex].GetComponent<PlayerInputHandler>().Grid = grid;
         players[playerIndex].GetComponent<Attributes>().CellSize = grid.cellSize;
+        players[playerIndex].GetComponent<Lives>().SpawnPosition = spawns.playerSpawnpoints[playerIndex];
+        
         playerIndex++;
     }
 

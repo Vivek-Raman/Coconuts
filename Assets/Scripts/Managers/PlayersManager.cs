@@ -29,7 +29,6 @@ public class PlayersManager : MonoBehaviour
         // misc settings
         players[playerIndex].GetComponent<PlayerInputHandler>().Grid = grid;
         players[playerIndex].GetComponent<Attributes>().CellSize = grid.cellSize;
-        players[playerIndex].GetComponent<Lives>().SpawnPosition = spawns.playerSpawnpoints[playerIndex];
         
         playerIndex++;
     }

@@ -8,8 +8,8 @@ public class Attributes : MonoBehaviour
     
     [SerializeField] private float bombCooldown = 3f;
 
+    [HideInInspector] public Health health;
     private float bombExplosionRangeInCells = 1f;
-    private Health health;
     
     private void Awake()
     {
@@ -50,16 +50,6 @@ public class Attributes : MonoBehaviour
         return cells * CellSize;
     }
     
-    #endregion
-
-    #region Increase Health
-
-    public int Health
-    {
-        get => health.CurrentHealth;
-        set => health.CurrentHealth = value;
-    }
-
     #endregion
     
 }

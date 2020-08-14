@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a60d793-adc8-4024-b188-6283a4efdc8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/HUDLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ScoreManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level 1/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level 1/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Level 2/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level 2/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/LowPolyTree1.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level 3/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level 3/Level 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Main Menu/Start Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Main Menu/Start Screen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Explodable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Explodable.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Modifiers/IncreasePlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Modifiers/IncreasePlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Lives.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +43,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Lives.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid System/GridSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grid System/DrawGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Modifiers/IncreasePlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,10 +59,13 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0-preview.3/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/PlaceBomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/HUDLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels/Main Menu/Start Screen.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Walls/SolidWallExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Modifiers/Modifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0-preview.3/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@7.1.5/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
@@ -60,12 +75,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.1.5/Shaders/Lit.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Spawnpoints.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Midpoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FrameAllPlayers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GridSystem.cs" />
@@ -91,25 +106,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/Attributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/IExplosionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/BombExplosionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Walls/SolidWallExplosionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Walls/ExplodableWallExplosionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/IncreaseBombRange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/PlaceBomb.cs" />
         <option value="$PROJECT_DIR$/.idea/.idea.Inspire-Me/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/IncreasePlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/DecreaseBombCooldown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Walls/ModifierTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/Modifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bomb/Bomb.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/CreateLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Lives.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Walls/DropModifierOnDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MainMenuInterface.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/NextScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Lives.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/HUDLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerExplosionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Attributes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/IncreasePlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Modifiers/Modifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extras/Unused/TestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" />
       </list>
     </option>
@@ -291,10 +312,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.30.1920.1050@0.30.1920.1050" timestamp="1578151133402" />
-    <state x="616" y="258" key="run.anything.popup" timestamp="1578505058373">
+    <state x="616" y="258" key="run.anything.popup" timestamp="1579868566250">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1578505058373" />
+    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1579868566250" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1578676473434">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

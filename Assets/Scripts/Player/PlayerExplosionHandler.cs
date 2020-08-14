@@ -12,6 +12,6 @@ public class PlayerExplosionHandler : MonoBehaviour, IExplosionHandler
 
     public void OnExplode(Transform bombOwner)
     {
-        health.CurrentHealth--;
+        health.ModifyHealth(-1, bombOwner);
     }
 }
